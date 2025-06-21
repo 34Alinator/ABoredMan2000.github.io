@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Über uns</title>
+  <title>Über mich</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,8 +14,27 @@
     header {
       background-color: #333;
       color: white;
-      padding: 15px;
-      text-align: center;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.5em;
+    }
+
+    .home-button {
+      background-color: #ff4081;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #e91e63;
     }
 
     .content {
@@ -27,7 +46,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    h1 {
+    h1, h2 {
       color: #333;
     }
 
@@ -39,23 +58,24 @@
 <body>
 
   <header>
-    <h1>Über uns</h1>
+    <div class="title">Über mich</div>
+    <a href="index.html" class="home-button">🏠 Startseite</a>
   </header>
 
   <div class="content">
-    <h2>Wer wir sind</h2>
+    <h2>Hallo!</h2>
     <p>
-      Willkommen auf unserer Website! mit einer Leidenschaft für Technik, Programmierung und innovative Ideen.
-    </p>
-
-    <h2>Unsere Mission</h2>
-    <p>
-      Unser Ziel ist es, spannende Projekte zu entwickeln, Wissen zu teilen und Menschen für das Thema Coding zu begeistern – unabhängig vom Erfahrungsstand.
+      Ich bin ein kreativer Einzelentwickler mit einer Leidenschaft für Technik, Coding und digitale Projekte. Auf dieser Website zeige ich, woran ich arbeite und teile nützliche Ideen oder Tools.
     </p>
 
     <h2>Was ich mache</h2>
     <p>
-      Von kleinen Spielen über Tools bis hin zu kreativen Experimenten – bei uns dreht sich alles um moderne Webtechnologien, Python, Java, Raspberry Pi und mehr.
+      Ich experimentiere gerne mit Webentwicklung, Python, kleinen Spielen, Raspberry Pi und allem, was mit Elektronik zu tun hat. Dabei lerne ich ständig Neues und lasse andere gerne daran teilhaben.
+    </p>
+
+    <h2>Warum diese Seite?</h2>
+    <p>
+      Diese Seite ist mein persönliches Projekt – als Portfolio, Spielplatz und Ort zum Teilen. Wenn du Feedback hast oder etwas cool findest, kannst du mich gerne kontaktieren.
     </p>
   </div>
 
