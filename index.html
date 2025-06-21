@@ -1,1 +1,69 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startseite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MeineWebsite</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Willkommen auf meiner Website!</h1>
+    <p>Dies ist die Startseite deiner neuen Webpräsenz.</p>
+  </div>
+
+</body>
+</html>
