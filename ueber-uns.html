@@ -46,12 +46,20 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    h1, h2 {
-      color: #333;
+    .sound-button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
 
-    p {
-      line-height: 1.6;
+    .sound-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -73,21 +81,13 @@
       Ich experimentiere gerne mit Webentwicklung, Python, kleinen Spielen, Raspberry Pi und allem, was mit Elektronik zu tun hat. Dabei lerne ich ständig Neues und lasse andere gerne daran teilhaben.
     </p>
 
-    <h2>Warum diese Seite?</h2>
-    <p>
-      Diese Seite ist mein persönliches Projekt – als Portfolio, Spielplatz und Ort zum Teilen. Wenn du Feedback hast oder etwas cool findest, kannst du mich gerne kontaktieren.
-    </p>
-    <div style="text-align: center; margin-top: 30px;">
-    <iframe
-      width="110"
-      height="200"
-      src="https://www.myinstants.com/instant/error-soundss-25534/embed/"
-      frameborder="0"
-      scrolling="no">
-    </iframe>
-</div>
+    <h2>Soundtest 😄</h2>
+    <p>Hier ist ein klassischer Button, der einen Sound abspielt:</p>
 
+    <button class="sound-button" onclick="document.getElementById('errorSound').play()">🔊 Fehler abspielen</button>
+    <audio id="errorSound" src="sounds/error.mp3" preload="auto"></audio>
   </div>
 
 </body>
 </html>
+
