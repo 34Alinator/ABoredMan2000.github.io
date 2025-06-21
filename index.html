@@ -2,13 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startseite</title>
+  <title>Über mich</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
       margin: 0;
-      background-color: #f9f9f9;
+      padding: 0;
     }
 
     header {
@@ -20,48 +20,63 @@
       align-items: center;
     }
 
-    .logo {
+    .title {
       font-size: 1.5em;
-      font-weight: bold;
     }
 
-    nav a {
+    .home-button {
+      background-color: #ff4081;
       color: white;
+      padding: 8px 16px;
       text-decoration: none;
-      margin-left: 20px;
-      transition: color 0.3s;
+      border-radius: 5px;
+      transition: background-color 0.3s;
     }
 
-    nav a:hover {
-      color: #ff4081;
+    .home-button:hover {
+      background-color: #e91e63;
     }
 
     .content {
-      padding: 40px 20px;
-      text-align: center;
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    @media (max-width: 600px) {
-      nav {
-        display: none;
-      }
+    h1, h2 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">MeineWebsite</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projekte.html">Projekte</a>
-      <a href="ueber-uns.html">Über uns</a>
-    </nav>
+    <div class="title">Über mich</div>
+    <a href="index.html" class="home-button">🏠 Startseite</a>
   </header>
 
   <div class="content">
-    <h1>Willkommen auf meiner Website!</h1>
-    <p>Dies ist die Startseite deiner neuen Webpräsenz.</p>
+    <h2>Hallo!</h2>
+    <p>
+      Ich bin ein kreativer Einzelentwickler mit einer Leidenschaft für Technik, Coding und digitale Projekte. Auf dieser Website zeige ich, woran ich arbeite und teile nützliche Ideen oder Tools.
+    </p>
+
+    <h2>Was ich mache</h2>
+    <p>
+      Ich experimentiere gerne mit Webentwicklung, Python, kleinen Spielen, Raspberry Pi und allem, was mit Elektronik zu tun hat. Dabei lerne ich ständig Neues und lasse andere gerne daran teilhaben.
+    </p>
+
+    <h2>Warum diese Seite?</h2>
+    <p>
+      Diese Seite ist mein persönliches Projekt – als Portfolio, Spielplatz und Ort zum Teilen. Wenn du Feedback hast oder etwas cool findest, kannst du mich gerne kontaktieren.
+    </p>
   </div>
 
 </body>
